@@ -3,15 +3,14 @@ using System.Linq;
 using System.Diagnostics;
 
 
-namespace ConsoleApplication
+namespace HelloWorld
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            var processList = Process.GetProcesses();
-            var process = processList.Where(p => p.ProcessName == "dotnet").First();
-            Console.WriteLine("Processing your feelings is " + process.PriorityClass);
+            Console.WriteLine("Hello World");
+            Console.ReadLine(); 
         }
     }
 }
