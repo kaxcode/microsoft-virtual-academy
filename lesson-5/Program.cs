@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace ConsoleApplication
+namespace Variables
 {
-    public class Variables
+    public class Program
     {
         public static void Main(string[] args)
         {
-            int = x;
-            int = y;
+            int x;
+            int y;
 
             x = 7;
             y = x + 3;
