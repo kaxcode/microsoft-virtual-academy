@@ -25,7 +25,7 @@ namespace Variables
             Console.Write("Type your last name: ");
             myLastname = Console.ReadLine();
 
-            Console.WriteLine("Hello, " + myFirstname + " " + myLastname)
+            Console.WriteLine("Hello, " + myFirstname + " " + myLastname);
 
 
         }
