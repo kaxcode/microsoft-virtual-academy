@@ -26,6 +26,7 @@ namespace Variables
             myLastname = Console.ReadLine();
 
             Console.WriteLine("Hello, " + myFirstname + " " + myLastname);
+            Console.ReadLine();
 
 
         }
