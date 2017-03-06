@@ -25,6 +25,11 @@ namespace Decisions
                 string message = "You won a new cat!";
                 Console.WriteLine(message);
             }
+            else 
+            {
+                string message = "Sorry, we didn't understand.";
+                Console.WriteLine(message);
+            }
             
 
             Console.ReadLine();
