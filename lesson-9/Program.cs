@@ -39,15 +39,26 @@ namespace ConsoleApplication
 
             // string[] names = new string[] { "Eddie", "Alex", "Michael", "David Lee"};
 
-            foreach (string name in names)
+            // foreach (string name in names)
+            // {
+            //     Console.WriteLine(name);
+            // }
+
+            // Console.ReadLine();
+
+            // Reversing an array's chars
+
+            string zig = "You can get what you want out of life if you help enough people get what they want";
+
+            char[] charArray = zig.ToCharArray();
+            Array.Reverse(charArray);
+
+            foreach (char zigChar in charArray)
             {
-                Console.WriteLine(name);
+                Console.Write(zigChar);
             }
 
             Console.ReadLine();
-
-
-
         }
     }
 }
