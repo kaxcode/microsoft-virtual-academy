@@ -20,6 +20,12 @@ namespace WorkingWithStrings
             // string myString = string.Format("{0:N}", 123456789);
             // string myString = string.Format("Percentage: {0:P}", .423);
 
+            string myString = " That summer we took threes across the board  ";
+
+            // myString = myString.Substring(6, 14);
+            // myString = myString.ToUpper();
+            // myString = myString.Replace(" ", "--");
+            myString = myString.Remove(6, 14);
             Console.WriteLine(myString);
             Console.ReadLine();
         }  
