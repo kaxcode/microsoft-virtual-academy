@@ -28,6 +28,8 @@ namespace ObjectLifetime
 
             myOtherCar.Model = "98";
 
+            myOtherCar = null;
+
             Console.WriteLine("{0} {1} {2} {3}", 
                 myOtherCar.Make, 
                 myOtherCar.Model, 
