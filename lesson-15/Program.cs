@@ -12,10 +12,10 @@ namespace ObjectLifetime
         {
             Car myCar = new Car();
 
-            myCar.Make = "Oldmobile";
-            myCar.Model = "Cutlas Supreme";
-            myCar.Year = 1986;
-            myCar.Color = "Silver";
+            // myCar.Make = "Oldmobile";
+            // myCar.Model = "Cutlas Supreme";
+            // myCar.Year = 1986;
+            // myCar.Color = "Silver";
 
             Car myOtherCar;
             myOtherCar = myCar;
@@ -26,15 +26,15 @@ namespace ObjectLifetime
                 myCar.Year,
                 myCar.Color);
 
-            myOtherCar.Model = "98";
+            // myOtherCar.Model = "98";
 
-            myOtherCar = null;
+            // myOtherCar = null;
 
-            Console.WriteLine("{0} {1} {2} {3}", 
-                myOtherCar.Make, 
-                myOtherCar.Model, 
-                myOtherCar.Year, 
-                myOtherCar.Color);
+            // Console.WriteLine("{0} {1} {2} {3}", 
+            //     myOtherCar.Make, 
+            //     myOtherCar.Model, 
+            //     myOtherCar.Year, 
+            //     myOtherCar.Color);
 
             Console.ReadLine();
         }
@@ -45,6 +45,21 @@ namespace ObjectLifetime
             public string Model { get; set; }
             public int Year { get; set; }
             public string Color { get; set; }
+
+            public Car()
+            {
+                // You could load from a configuration file,
+                // a database, etc.
+                Make = "Nissan";
+            }
+
+            public Car(string make, string model, int year, string color)
+            {
+                Make = make;
+                Model = model;
+                Year = year;
+                Color = color;
+            }
         }
     }
 }
