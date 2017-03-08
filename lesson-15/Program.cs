@@ -17,11 +17,22 @@ namespace ObjectLifetime
             myCar.Year = 1986;
             myCar.Color = "Silver";
 
+            Car myOtherCar;
+            myOtherCar = myCar;
+
             Console.WriteLine("{0} {1} {2} {3}",
                 myCar.Make,
                 myCar.Model,
                 myCar.Year,
                 myCar.Color);
+
+            myOtherCar.Model = "98";
+
+            Console.WriteLine("{0} {1} {2} {3}", 
+                myOtherCar.Make, 
+                myOtherCar.Model, 
+                myOtherCar.Year, 
+                myOtherCar.Color);
 
             Console.ReadLine();
         }
